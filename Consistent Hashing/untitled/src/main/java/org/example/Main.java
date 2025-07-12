@@ -32,6 +32,7 @@ public class Main {
         ch.printDistribution();
 
         ch.removeNode("Server-1");
+        ch.removeNode("Server-2");
         System.out.println("Request Distribution:");
         ch.printDistribution();
     }

@@ -66,7 +66,7 @@ public class ConsistentHashing {
         for (String key : keys) {
             String newNode = getNode(key);
             nodeToKeysMap.computeIfAbsent(newNode, k -> new HashSet<>()).add(key);
-            logger.info("Key: " + key + " reassigned from " + removedNode + " to " + newNode);
+            //logger.info("Key: " + key + " reassigned from " + removedNode + " to " + newNode);
         }
     }
 
