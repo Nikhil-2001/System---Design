@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>tail -f via WebSocket</title>
+    <style>
+        body { font-family: monospace; padding: 1rem; }
+        #log { width: 100%; height: 80vh; border: 1px solid #ccc; line-height: 1; padding: .5rem; overflow:auto; white-space:pre-wrap; background:#111; color:#eee }
+
+    </style>
+</head>
+<body>
+<h2>Live logs</h2>
+<div id="log"></div>
+<script>
+    const logEl = document.getElementById('log');
+    const wsProtocol = (location.protocol === 'https:') ? 'wss' : 'ws';
+    const socket = new WebSocket(wsProtocol + '://' + location.host + '/logs');
+
+
+    socket.addEventListener('open', () => {
+    appendLine('[connected]');
+    });
+
+
+    socket.addEventListener('message', (ev) => {
+    appendLine(ev.data);
+    });
+
+
+    socket.addEventListener('close', () => appendLine('[disconnected]'));
+    socket.addEventListener('error', (e) => appendLine('[error] ' + e.message));
+
+
+    function appendLine(text) {
+    text = text.replace(/\r\n/g, '\n');
+    logEl.textContent += text;
+    logEl.scrollTop = logEl.scrollHeight;
+    }
+</script>
+</body>
+</html>
