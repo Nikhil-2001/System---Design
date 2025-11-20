@@ -1,41 +1,41 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>tail -f via WebSocket</title>
-    <style>
-        body { font-family: monospace; padding: 1rem; }
-        #log { width: 100%; height: 80vh; border: 1px solid #ccc; line-height: 1; padding: .5rem; overflow:auto; white-space:pre-wrap; background:#111; color:#eee }
-
-    </style>
+    <meta charset="UTF-8" />
+    <title>tail -f</title>
 </head>
 <body>
 <h2>Live logs</h2>
-<div id="log"></div>
+<div id = "log" style = "
+background-color: #000000;
+color:#00FF00;
+whitespace: pre-wrap;
+overflow-y:auto;
+font-family:monospace;
+padding:10px;
+heigth:400px;
+border-radius:8px
+" ></div>
 <script>
-    const logEl = document.getElementById('log');
-    const wsProtocol = (location.protocol === 'https:') ? 'wss' : 'ws';
-    const socket = new WebSocket(wsProtocol + '://' + location.host + '/logs');
+    const logEl = document.getElementById("log");
+    const webSocket = new WebSocket("ws://" + "localhost:8080/logs");
 
+    webSocket.addEventListener("open", () => {
+        appendLog("Connected");
+    })
 
-    socket.addEventListener('open', () => {
-    appendLine('[connected]');
-    });
+    webSocket.addEventListener("message", (e) => {
+        appendLog(e.data);
+    })
 
+    webSocket.addEventListener("close", () => {
+        appendLog(closed);
+    })
 
-    socket.addEventListener('message', (ev) => {
-    appendLine(ev.data);
-    });
-
-
-    socket.addEventListener('close', () => appendLine('[disconnected]'));
-    socket.addEventListener('error', (e) => appendLine('[error] ' + e.message));
-
-
-    function appendLine(text) {
-    text = text.replace(/\r\n/g, '\n');
-    logEl.textContent += text;
-    logEl.scrollTop = logEl.scrollHeight;
+    function appendLog(text) {
+        text = text.replace(/\r\n/g, '\n');
+        logEl.textContent += text + '\n';
+        logEL.scrollTop = logEL.scrollHeigth;
     }
 </script>
 </body>

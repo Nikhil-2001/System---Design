@@ -63,7 +63,7 @@ public class LogTailerService {
                 while ((line = reader.readLine()) != null) {
                     byte[] bytes = line.getBytes("ISO-8859-1");
                     String utf8Line = new String(bytes, StandardCharsets.UTF_8);
-                    webSocketHandler.broadcastLine(utf8Line + "\n");
+                    webSocketHandler.broadcastLine(utf8Line);
                 }
                 filePointer = reader.getFilePointer();
             }
