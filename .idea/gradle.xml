@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/BrowserController" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/BrowserController" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Connect4Game" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Connect4Game" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Consistent Hashing/untitled" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Consistent Hashing/untitled" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ElevatorDesign" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ElevatorDesign" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/KafkaConsumer" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/KafkaConsumer" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/KafkaProducer" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/KafkaProducer" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/LLD" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/LLD" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/LRUCache" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/LRUCache" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/MultiThreading" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/MultiThreading" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/RateLimiter" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/RateLimiter" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SnakeAndLadder" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SnakeAndLadder" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SpringBoot-Ad-Hoc" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SpringBoot-Ad-Hoc" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/TicTacToe" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/TicTacToe" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Websocket" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Websocket" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ad-hoc" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ad-hoc" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/protocolbuffer" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/protocolbuffer" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
